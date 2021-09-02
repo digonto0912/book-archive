@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book something</title>
+    <title>Book Archive</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <!-- main -->
+    
+    <main>
+        <!-- head line -->
+        <h1 class="text-primary mb-3 mt-3 text-center">
+            Please Search
+        </h1>
+
+        <!-- search box -->
+        <div class="input-group mb-5 w-50 mx-auto">
+            <input type="text" id="search-box" class="form-control" placeholder="search Please" aria-label="search Please" aria-describedby="button-addon2">
+
+        <!-- search box button -->
+            <button onclick="searchButton()" id="button-addon2" class="btn btn-outline-secondary" type="button">Button</button>
+          </div>
+
+        <!-- Found Data -->
+        <div id="found-data"></div>
+
+        <!-- No Result Found -->
+        <div id="none"></div>
+
+        <!-- Cards -->
+        <div id="resultCard" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </main>
 
     <!-- bootstrap -->
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
